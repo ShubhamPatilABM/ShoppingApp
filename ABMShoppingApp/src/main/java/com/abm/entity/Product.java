@@ -42,13 +42,27 @@ public class Product {
 
 	@Column(name = "is_approved")
 	private String isApproved;
-
+	
+	@Column(name = "brand")
+	private String brand;
+	
 	@ManyToOne
 	@JoinColumn(name = "r_id")
 	private Retailer retailer;
 	
 	@OneToOne(mappedBy = "product")
 	private OrderLineItems orderLineItems;
+	
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	
 
 	public int getProductId() {
 		return productId;

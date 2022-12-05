@@ -8,12 +8,19 @@
 </head>
 <body>
 
+
+
 <h1>ADD PRODUCT</h1>
-<form action = "">
-	Product Name : <input name="" /> <br />
-	Product Image : <input name="" /> <br />
-	Product Description : <input name="" /> <br />
-	Product Price : <input name="" /> <br />
+<form action = "newProduct">
+
+	
+	Product Name : <input name="productName" /> <br />
+	Product Price : <input name="productPrice" /> <br />
+	Product Category : <input name="productCategory" /> <br />
+	Product Brand: <input name="brand"> <br />
+	
+	<input type="submit" value="Submit">
+	
 	
 </form>
 

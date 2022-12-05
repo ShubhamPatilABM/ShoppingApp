@@ -1,5 +1,6 @@
 package com.abm.controller;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.abm.entity.Details;
 import com.abm.entity.Product;
 import com.abm.entity.Retailer;
 import com.abm.entity.User;
@@ -23,6 +25,7 @@ public class ProductController {
 	
 	@RequestMapping("/newProduct")
 	public String addNewProduct(Product product) {
+		
 		productService.registerProduct(product);
 		return "confirmation.jsp";
 	}

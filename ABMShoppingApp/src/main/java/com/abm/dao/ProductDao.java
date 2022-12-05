@@ -18,7 +18,7 @@ public class ProductDao {
 	private EntityManager entityManager;
 	
 	public void addProduct(Product product) {
-		entityManager.merge(product);
+		entityManager.persist(product);
 	}
 
 	public List<Product> fetchAllProducts() {
