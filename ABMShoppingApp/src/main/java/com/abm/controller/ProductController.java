@@ -21,7 +21,11 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
-	
+	@RequestMapping("/newProduct")
+	public String newUser(Product product) {
+		productService.registerProduct(product);
+		return "confirmation.jsp";
+	}
 
 	@RequestMapping("/showProduct")
 	public String viewProduct(@RequestParam("p_category") String productCategory,Map<String, Object> model) {

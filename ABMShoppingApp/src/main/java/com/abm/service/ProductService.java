@@ -21,20 +21,19 @@ public class ProductService {
 	@Autowired
 	private Product product;
 	
+	public void registerProduct(Product product) {
+		productDao.addProduct(product);
+	}
+	
+	
 	public List<Product> viewProduct(Product product) {
 		return productDao.fetchAllProducts();
 	}
 
 	public List<Product> fetching(String productCategory) {
-		
 		return productDao.fetchByCategory(productCategory);
 	}
 	
-//	public List<Product> fetchByPriceRange(float productPrice1, float productPrice2) {
-//		List<Product> list = productDao.fetchAllProducts();
-//		
-//		List<Object> rangeProductList = list.stream().filter(prod -> productPrice1 <= product.getProductPrice() && productPrice2 >= product.getProductPrice())
-//				.collect(Collectors.toList());
-//		list.forEach(emp -> System.out.println(emp));
+
 
 }

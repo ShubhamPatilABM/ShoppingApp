@@ -9,12 +9,17 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 
 import com.abm.entity.Product;
+import com.abm.entity.Retailer;
 
 @Repository
 public class ProductDao {
 
 	@PersistenceContext
 	private EntityManager entityManager;
+	
+	public void addProduct(Product product) {
+		entityManager.merge(product);
+	}
 
 	public List<Product> fetchAllProducts() {
 		Query q = entityManager.createQuery("select p from Product p");
