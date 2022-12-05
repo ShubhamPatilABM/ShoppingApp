@@ -19,5 +19,12 @@ public class RetailerService {
 	public void registerRetailer(Retailer retailer) {
 		retailerDao.addRetailer(retailer);
 	}
+	
+	public Retailer findByid(int retId) {
+	
+		Retailer r= retailerDao.fetchDetails(retId);
+		return r;
+		
+	}
 
 }
