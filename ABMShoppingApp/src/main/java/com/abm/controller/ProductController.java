@@ -22,7 +22,7 @@ public class ProductController {
 	private ProductService productService;
 	
 	@RequestMapping("/newProduct")
-	public String newUser(Product product) {
+	public String addNewProduct(Product product) {
 		productService.registerProduct(product);
 		return "confirmation.jsp";
 	}
