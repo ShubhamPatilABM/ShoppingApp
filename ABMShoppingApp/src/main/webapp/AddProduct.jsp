@@ -11,7 +11,7 @@
 
 
 <h1>ADD PRODUCT</h1>
-<form action = "newProduct">
+<form action = "/newProduct" method="post">
 
 	
 	Product Name : <input name="productName" /> <br />

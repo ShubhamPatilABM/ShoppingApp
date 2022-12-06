@@ -9,7 +9,7 @@
 <body>
 
 <h1>LOGIN PAGE</h1>
-<form action = "">
+<form action = "LoginPage">
 	<div>
 	Email ID : <input name="" /> 
 	</div>
