@@ -117,8 +117,9 @@ body {
 			</div>
 		</div>
 		<div class="navbarloginandcart">
+		<form action="deatils">
 		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-		
+		</form>
 		<a href=""style="float: right;">Login/SignUp</a>
 		<a href="" style="float: right;">Cart</a>
 		</div>
