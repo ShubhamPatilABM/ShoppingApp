@@ -96,6 +96,12 @@ body {
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
+  }
+  
+#slideset1 > *:nth-child(1) {animation-delay: 0s}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}
+  
 </style>
 <meta charset="ISO-8859-1">
 <title>ABM Shopping App</title>
@@ -134,6 +140,13 @@ body {
 		  <li><a href="#">guess</a></li>
 		  <li><a href="#">allen solly</a></li>
 		</ul>
+		
+		<div id=slideset1>
+		  <img src="C:/Users/dharmesh.sosa/git/ShoppingApp/ABMShoppingApp/src/main/webapp/pic_1.jpg" width="500" height="333">
+		  <img src="C:/Users/dharmesh.sosa/git/ShoppingApp/ABMShoppingApp/src/main/webapp/pic_2.jpg" width="500" height="333">
+		  <img src="C:/Users/dharmesh.sosa/git/ShoppingApp/ABMShoppingApp/src/main/webapp/pic_3.jpg" width="500" height="333">
+		</div>
+		
 
 <script>
 

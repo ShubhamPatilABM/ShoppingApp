@@ -33,5 +33,6 @@ public class ProductDao {
 		List<Product> productListByCategory = q.getResultList();
 		return productListByCategory;
 	}
+	
 
 }
